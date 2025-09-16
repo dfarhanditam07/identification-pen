@@ -1,0 +1,65 @@
+# =========================
+# Python / Virtual Environment
+# =========================
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.egg-info/
+*.egg
+
+# =========================
+# Dataset dan Training Data
+# =========================
+trainning/dataset/
+trainning/__pycache__/
+
+# =========================
+# Model hasil training
+# =========================
+implementation/models/*.h5
+implementation/models/*.pkl
+implementation/models/*.joblib
+implementation/models/labels_mapping.json
+
+# =========================
+# Database
+# =========================
+implementation/database/*.db
+
+# =========================
+# Jupyter / Logs / Temporary
+# =========================
+.ipynb_checkpoints/
+*.log
+*.tmp
+*.bak
+
+# =========================
+# IDE / Editor Settings
+# =========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# Ignore everything by default
+*
+
+# Unignore specific files
+!live_detection.py
+!train.py
+!detect_cam.py
+!requirements.txt
+!train_yolo.py
+
+# Unignore .gitignore itself
+!.gitignore
