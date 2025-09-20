@@ -2,9 +2,13 @@ from ultralytics import YOLO
 
 # ===== Konfigurasi Dataset dan Model =====
 DATASET_PATH = r"D:\Identification-Pen-Yolo-KNN\yolo_dataset\data.yaml"
-MODEL = "yolov8n.pt"  # model YOLOv8 Nano (ringan, cepat untuk MVP)
-EPOCHS = 50
+MODEL = "yolov8n.pt"   # model YOLOv8 Nano (ringan, cepat untuk MVP)
+EPOCHS = 10
 IMG_SIZE = 640
+
+# Folder hasil training
+PROJECT_DIR = r"D:\Identification-Pen-Yolo-KNN\implementation\models\yolo"
+RUN_NAME = "pen_detector"   # nama folder untuk hasil training
 
 def train_yolo():
     # Load model YOLOv8
@@ -15,9 +19,11 @@ def train_yolo():
         data=DATASET_PATH,
         epochs=EPOCHS,
         imgsz=IMG_SIZE,
-        batch=16,           # batch size, sesuaikan dengan GPU/CPU
-        workers=2,          # threads untuk loading data
-        optimizer="Adam",   # bisa SGD atau Adam
+        batch=16,
+        workers=2,
+        optimizer="Adam",
+        project=PROJECT_DIR,   # lokasi folder utama
+        name=RUN_NAME,         # nama subfolder run
         verbose=True
     )
 

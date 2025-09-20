@@ -8,7 +8,7 @@ from ultralytics import YOLO
 from sklearn.preprocessing import StandardScaler
 
 # ====== CONFIG ======
-YOLO_MODEL_PATH = r"D:\Identification-Pen-Yolo-KNN\runs\detect\train\weights\best.pt"
+YOLO_MODEL_PATH = r"D:\Identification-Pen-Yolo-KNN\implementation\models\yolo\pen_detector\weights\best.pt"
 KNN_MODEL_PATH = r"D:\Identification-Pen-Yolo-KNN\implementation\models\knn_model.pkl"
 SCALER_PATH   = r"D:\Identification-Pen-Yolo-KNN\implementation\models\knn_scaler.pkl"
 LABELS_PATH   = r"D:\Identification-Pen-Yolo-KNN\implementation\models\labels_mapping.json"
