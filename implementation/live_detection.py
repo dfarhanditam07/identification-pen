@@ -50,7 +50,7 @@ def extract_features(image):
     return flattened
 
 # ====== LIVE CAMERA DETECTION ======
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(2)
 if not cap.isOpened():
     print("❌ Tidak bisa membuka kamera")
     exit()
