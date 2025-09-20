@@ -1,65 +1,34 @@
-# =========================
-# Python / Virtual Environment
-# =========================
-venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.swp
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
 *.egg-info/
 *.egg
+dist/
+build/
 
-# =========================
-# Dataset dan Training Data
-# =========================
-trainning/dataset/
-trainning/__pycache__/
+# PyInstaller
+*.manifest
+*.spec
 
-# =========================
-# Model hasil training
-# =========================
-implementation/models/*.h5
-implementation/models/*.pkl
-implementation/models/*.joblib
-implementation/models/labels_mapping.json
-
-# =========================
-# Database
-# =========================
-implementation/database/*.db
-
-# =========================
-# Jupyter / Logs / Temporary
-# =========================
-.ipynb_checkpoints/
+# Installer logs
+debug.log
 *.log
-*.tmp
-*.bak
 
-# =========================
-# IDE / Editor Settings
-# =========================
+# IDE settings
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# =========================
-# OS Files
-# =========================
-.DS_Store
-Thumbs.db
+# YOLO runs
+runs/
 
-# Ignore everything by default
-*
-
-# Unignore specific files
-!live_detection.py
-!train.py
-!detect_cam.py
-!requirements.txt
-!train_yolo.py
-
-# Unignore .gitignore itself
-!.gitignore
+# Large files
+yolov8n.pt

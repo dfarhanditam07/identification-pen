@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 # ===== Konfigurasi Dataset dan Model =====
-DATASET_PATH = r"D:\Wiring-Harnes_Identification\yolo_dataset\data.yaml"
+DATASET_PATH = r"D:\Identification-Pen-Yolo-KNN\yolo_dataset\data.yaml"
 MODEL = "yolov8n.pt"  # model YOLOv8 Nano (ringan, cepat untuk MVP)
 EPOCHS = 50
 IMG_SIZE = 640
