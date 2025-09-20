@@ -1,8 +1,8 @@
 
-pulpen_detection - v2 2025-09-11 7:11pm
+pulpen_detection - v5 2025-09-21 12:16am
 ==============================
 
-This dataset was exported via roboflow.com on September 16, 2025 at 3:05 PM GMT
+This dataset was exported via roboflow.com on September 20, 2025 at 5:17 PM GMT
 
 Roboflow is an end-to-end computer vision platform that helps you
 * collaborate with your team on computer vision projects
@@ -17,13 +17,15 @@ visit https://github.com/roboflow/notebooks
 
 To find over 100k other datasets and pre-trained models, visit https://universe.roboflow.com
 
-The dataset includes 89 images.
-Bounding-Box are annotated in YOLOv8 format.
+The dataset includes 148 images.
+Bounding-Box are annotated in YOLOv8 Oriented Object Detection format.
 
 The following pre-processing was applied to each image:
 * Auto-orientation of pixel data (with EXIF-orientation stripping)
 * Resize to 640x640 (Stretch)
+* Auto-contrast via adaptive equalization
 
-No image augmentation techniques were applied.
+The following augmentation was applied to create 2 versions of each source image:
+* Random brigthness adjustment of between 0 and +50 percent
 
 

@@ -1,13 +1,6 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: train/images
+val: valid/images
+test: test/images
 
-nc: 1
-names: ['Pulpen']
-
-roboflow:
-  workspace: dimas-farhanditama
-  project: pulpen_detection-wsgse
-  version: 2
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/dimas-farhanditama/pulpen_detection-wsgse/dataset/2
+names: 
+  0: Pulpen
